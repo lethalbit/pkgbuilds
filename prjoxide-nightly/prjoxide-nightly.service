@@ -1,0 +1,9 @@
+[Unit]
+Description=Publish a new prjoxide-nightly to the AUR
+
+[Service]
+Environment=SSH_AUTH_SOCK=/run/user/1001/ssh-agent.socket
+WorkingDirectory=/srv/aur-pkg/prjoxide-nightly
+User=fae
+Group=users
+ExecStart=/srv/aur-pkg/prjoxide-nightly/update-pkg.sh

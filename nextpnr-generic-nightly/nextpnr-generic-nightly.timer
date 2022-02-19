@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily publication of a new nextpnr-generic-nightly to the AUR
+
+[Timer]
+OnCalendar=*-*-* 00:00:00 UTC
+AccuracySec=15m
+Persistent=true
+
+[Install]
+WantedBy=multi-user.target
