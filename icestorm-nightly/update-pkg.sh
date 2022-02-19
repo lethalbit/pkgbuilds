@@ -1,7 +1,7 @@
 #!/bin/bash
 
 _update() {
-	[ ! -d "icestorm" ] && git clone -–depth 1 https://github.com/YosysHQ/icestorm.git
+	[ ! -d "icestorm" ] && git clone --depth 1 https://github.com/YosysHQ/icestorm.git
 
 	cd ./icestorm
 	git pull

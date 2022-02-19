@@ -8,7 +8,7 @@ pkgdesc="nextpnr portable FPGA place and route tool - for ice40"
 arch=()
 url="https://github.com/YosysHQ/nextpnr"
 license=("custom:ISC")
-groups=()
+arch=("x86_64")
 options=("!strip")
 depends=(
 	"yosys-nightly"

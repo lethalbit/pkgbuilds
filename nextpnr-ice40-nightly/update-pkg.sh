@@ -22,7 +22,7 @@ _hash() {
 
 
 _mkpkg() {
-	sed -e "s/@NPR_VER@/$(TZ=UTC date '+%Y%m%d')|$(_version | sed 's/-/_/g')/" \
+	sed -e "s/@NPR_VER@/$(TZ=UTC date '+%Y%m%d')_$(_version | sed 's/-/_/g')/" \
 		-e "s/@NPR_HASH@/$(_hash)/" PKGBUILD.in > PKGBUILD
 	makepkg --printsrcinfo > .SRCINFO
 }
