@@ -21,6 +21,7 @@ optdepends=()
 makedepends=("git" "gcc" "cmake" "ninja" "pkgconf" "gawk" "eigen" "boost")
 conflicts=(
 	"nextpnr-git"
+	"nextpnr-all-nightly"
 )
 replaces=()
 source=(
@@ -50,10 +51,6 @@ build() {
 	ninja
 }
 
-check() {
-	cd "${srcdir}/nextpnr"
-	ninja -C build-ice40 test
-}
 
 package() {
 	cd "${srcdir}/nextpnr"

@@ -29,11 +29,6 @@ build() {
 
 }
 
-check() {
-	cd "${srcdir}/icestorm"
-	make CXX=g++ PREFIX="${_PREFIX}" test
-}
-
 package() {
 	cd "${srcdir}/icestorm"
 	make PREFIX="${_PREFIX}" DESTDIR="${pkgdir}" install

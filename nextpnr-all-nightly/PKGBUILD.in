@@ -56,11 +56,6 @@ build() {
 	ninja
 }
 
-check() {
-	cd "${srcdir}/nextpnr"
-	ninja -C build-all test
-}
-
 package() {
 	cd "${srcdir}/nextpnr"
 	DESTDIR="${pkgdir}" PREFIX="${_PREFIX}" ninja -C build-ecp5 install

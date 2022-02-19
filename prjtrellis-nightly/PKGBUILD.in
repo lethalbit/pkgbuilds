@@ -52,5 +52,4 @@ package() {
 	DESTDIR="${pkgdir}" ninja -C build install
 	install -Dm644 "${srcdir}/prjtrellis/COPYING" "${pkgdir}${_PREFIX}/share/licenses/trellis/COPYING"
 	install -D "${srcdir}/prjtrellis/tools/bit_to_svf.py" "${pkgdir}${_PREFIX}/share/trellis/tools/bit_to_svf.py"
-	cd ..
 }
