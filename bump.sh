@@ -6,12 +6,3 @@ for pkg in "${AUR_PKGS[@]}"; do
 	./update-pkg.sh
 	popd
 done
-
-
-for pkg in "${AUR_PKGS[@]}"; do
-	mkdir $pkg
-	touch $pkg/$pkg.timer
-	touch $pkg/$pkg.service
-	touch $pkg/update-pkg.sh
-	touch $pkg/PKGBUILD.in
-done
