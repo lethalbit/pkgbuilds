@@ -1,0 +1,9 @@
+*
+!.gitignore
+!*.sh
+!*.timer
+!*.service
+!*.in
+!*.patch
+!*.conf
+!*/

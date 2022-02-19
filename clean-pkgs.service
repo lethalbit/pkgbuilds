@@ -1,0 +1,6 @@
+[Unit]
+Description=Flush Old Builds
+
+[Service]
+WorkingDirectory=/srv/http/pkg.catgirl.link/
+ExecStart=/srv/aur-pkgs/clean-pkgs.sh
