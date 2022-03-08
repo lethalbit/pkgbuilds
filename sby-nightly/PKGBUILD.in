@@ -31,4 +31,5 @@ package() {
 	cd "${srcdir}/symbiyosys"
 	make PREFIX="${_PREFIX}" DESTDIR="${pkgdir}" install
 	install -Dm644 COPYING "${pkgdir}/usr/share/licenses/symbiyosys/LICENSE"
+	cd ..
 }

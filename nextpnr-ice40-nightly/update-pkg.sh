@@ -1,7 +1,7 @@
 #!/bin/bash
 
 _update() {
-	[ ! -d "nextpnr" ] && git clone -–depth 1 https://github.com/YosysHQ/nextpnr.git
+	[ ! -d "nextpnr" ] && git clone --depth 1 https://github.com/YosysHQ/nextpnr.git
 
 	cd ./nextpnr
 	git pull

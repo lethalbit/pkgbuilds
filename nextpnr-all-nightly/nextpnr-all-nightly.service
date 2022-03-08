@@ -3,7 +3,7 @@ Description=Publish a new nextpnr-all-nightly to the AUR
 
 [Service]
 Environment=SSH_AUTH_SOCK=/run/user/1001/ssh-agent.socket
-WorkingDirectory=/srv/aur-pkg/nextpnr-all-nightly
+WorkingDirectory=/srv/aur-pkgs/nextpnr-all-nightly
 User=fae
 Group=users
 ExecStart=/srv/aur-pkgs/nextpnr-all-nightly/update-pkg.sh

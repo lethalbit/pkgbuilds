@@ -51,7 +51,6 @@ build() {
 	ninja
 }
 
-
 package() {
 	cd "${srcdir}/nextpnr"
 	DESTDIR="${pkgdir}" PREFIX="${_PREFIX}" ninja -C build-ecp5 install

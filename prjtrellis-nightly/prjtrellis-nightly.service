@@ -3,7 +3,7 @@ Description=Publish a new prjtrellis-nightly to the AUR
 
 [Service]
 Environment=SSH_AUTH_SOCK=/run/user/1001/ssh-agent.socket
-WorkingDirectory=/srv/aur-pkg/prjtrellis-nightly
+WorkingDirectory=/srv/aur-pkgs/prjtrellis-nightly
 User=fae
 Group=users
-ExecStart=/srv/aur-pkg/prjtrellis-nightly/update-pkg.sh
+ExecStart=/srv/aur-pkgs/prjtrellis-nightly/update-pkg.sh

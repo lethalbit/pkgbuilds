@@ -3,7 +3,7 @@ Description=Publish a new sby-nightly to the AUR
 
 [Service]
 Environment=SSH_AUTH_SOCK=/run/user/1001/ssh-agent.socket
-WorkingDirectory=/srv/aur-pkg/sby-nightly
+WorkingDirectory=/srv/aur-pkgs/sby-nightly
 User=fae
 Group=users
-ExecStart=/srv/aur-pkg/sby-nightly/update-pkg.sh
+ExecStart=/srv/aur-pkgs/sby-nightly/update-pkg.sh
